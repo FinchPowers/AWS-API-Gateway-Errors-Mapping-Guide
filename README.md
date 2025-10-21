@@ -71,6 +71,14 @@ the target API Gateway.
 
 Associate the API Key with a usage plan that includes the targeted API Gateway.
 
+### Possible Cause 4 - API Gateway API key source miss configured
+
+If you're using an authorizer lambda, API Gateway API key source default value, Header, will not work.
+
+#### Fix
+
+The "Api key source" configuration must be set to "Authorizer".
+
 ## Access Denied Explicitly
 
 ```shell
